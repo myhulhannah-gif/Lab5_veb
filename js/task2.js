@@ -47,9 +47,9 @@ function fillTable(){
             if (i === j) {
                 value = 0;                    //головна діагональ
             } else if (i % 2 === 1) {
-                value = -randomNumber();      //парний рядок за умовою: від'ємне
+                value = -randomNumber();      //парний рядок: від'ємне
             } else {
-                value = randomNumber();       //непарний рядок за умовою: додатне
+                value = randomNumber();       //непарний рядок: додатне
             }
 
             table.rows[i].cells[j].textContent = value;

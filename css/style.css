@@ -67,7 +67,6 @@ input, select {
     border-radius: 6px;
 }
 
-/* Картки задач */
 .card {
     background: #fff;
     border-left: 6px solid #9fc2ee;
@@ -78,15 +77,13 @@ input, select {
 }
 .card h4 { margin: 0 0 6px; color: #0b3d91; }
 .card p  { margin: 4px 0; }
-.card.done     { border-color: #2e9e6b; }   /* зелений: виконано */
-.card.progress { border-color: #f0a020; }   /* жовтий: в процесі */
-.card.planned  { border-color: #1e6fd9; }   /* синій: заплановано */
+.card.done     { border-color: #2e9e6b; }
+.card.progress { border-color: #f0a020; }
+.card.planned  { border-color: #1e6fd9; }
 
-/* Таблиця (знадобиться в завданні 2) */
 table { border-collapse: collapse; width: 100%; max-width: 500px; margin: 12px 0; }
 td { border: 1px solid #5b86c2; height: 40px; text-align: center; background: #fff; }
 
-/* Адаптивність */
 @media (max-width: 600px) {
     header h1 { font-size: 22px; }
     nav a, button, input, select { width: 100%; text-align: center; }
