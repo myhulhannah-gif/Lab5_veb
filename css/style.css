@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eaf2fb;
+    color: #1b2a41;
+    line-height: 1.5;
+}
+
+header {
+    background: linear-gradient(135deg, #072558, #1e6fd9);
+    color: #fff;
+    padding: 24px 16px;
+    text-align: center;
+}
+header h1 { margin: 0 0 8px; font-size: 28px; }
+header p  { margin: 0 0 16px; color: #d6e6ff; }
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+nav a {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+nav a:hover  { background: rgba(255, 255, 255, 0.3); }
+nav a.active { background: #fff; color: #0b3d91; font-weight: bold; }
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+h2, h3 { color: #0b3d91; }
+
+.task-text {
+    background: #fff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #c5dbf7;
+    margin-bottom: 16px;
+}
+
+button {
+    background: #1e6fd9;
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover { background: #0b3d91; }
+
+input, select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #9fc2ee;
+    border-radius: 6px;
+}
+
+/* Картки задач */
+.card {
+    background: #fff;
+    border-left: 6px solid #9fc2ee;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(11, 61, 145, 0.12);
+}
+.card h4 { margin: 0 0 6px; color: #0b3d91; }
+.card p  { margin: 4px 0; }
+.card.done     { border-color: #2e9e6b; }   /* зелений: виконано */
+.card.progress { border-color: #f0a020; }   /* жовтий: в процесі */
+.card.planned  { border-color: #1e6fd9; }   /* синій: заплановано */
+
+/* Таблиця (знадобиться в завданні 2) */
+table { border-collapse: collapse; width: 100%; max-width: 500px; margin: 12px 0; }
+td { border: 1px solid #5b86c2; height: 40px; text-align: center; background: #fff; }
+
+/* Адаптивність */
+@media (max-width: 600px) {
+    header h1 { font-size: 22px; }
+    nav a, button, input, select { width: 100%; text-align: center; }
+    input, select { margin-bottom: 8px; }
+}

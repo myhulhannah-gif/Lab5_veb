@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/task2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №5</h1>
+        <p>Мигуль Анна Сергіївна, КН-32, варіант 9</p>
+        <nav>
+            <a href="task1.html">Завдання 1</a>
+            <a href="task2.html" class="active">Завдання 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Завдання 2.1. Список фруктів та їх вартість</h2>
+        <div class="task-text">
+            У формі є список фруктів та поле для введення їх вартості. Після
+            натискання Enter при введенні вартості формується список, у якому
+            зазначена назва фрукту та його вартість.
+        </div>
+
+        <form id="fruitForm">
+            <select id="fruit">
+                <option>Яблуко</option>
+                <option>Банан</option>
+                <option>Апельсин</option>
+                <option>Груша</option>
+                <option>Виноград</option>
+            </select>
+            <input type="text" id="price" placeholder="Вартість, грн (Enter)">
+        </form>
+
+        <p id="message"></p>
+        <ul id="list"></ul>
+
+        <h2>Завдання 2.2. Заповнення таблиці</h2>
+        <div class="task-text">
+            Дана пуста таблиця. При натисканні на кнопку заповнити її наступним
+            чином: парні рядки від'ємні числа, непарні додатні, головна діагональ 0.
+        </div>
+
+        <button id="fillBtn">Заповнити таблицю</button>
+
+        <table id="matrix">
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </main>
+</body>
+</html>
